@@ -1,0 +1,53 @@
+/* ================================================================ 
+This copyright notice must be untouched at all times.
+
+The original version of this stylesheet and the associated (x)html
+is available at http://www.cssmenus.co.uk
+Copyright (c) 2009- Stu Nicholls. All rights reserved.
+This stylesheet and the associated (x)html may be modified in any 
+way to fit your requirements.
+=================================================================== */
+#outer {width:1000px; position:absolute; top:145px; left:0; background:transparent; height:70px; overflow:hidden;}
+
+#menuHolder {position:relative; float:left; left:50%;}
+
+#dropline {padding:0; margin:0; list-style:none; float:left; position:relative; right:50%;}
+#dropline div {position:absolute; left:-9999px; width:100%; z-index:10; height:35px; border-top:4px solid #e60; top:35px; background:#fff;}
+#dropline ul {padding:0; margin:0; list-style:none;}
+#dropline table {border-collapse:collapse: padding:0; margin:-1px -10px; width:0; height:0;}
+
+#dropline li ul {position:relative; float:left; left:50%;}
+#dropline li ul li {float:left; position:relative; right:50%;}
+#dropline li ul li a {display:block; float:left; padding:0 10px; background:transparent; color:#000; font-weight:bold;}
+#dropline li ul li a:hover {text-decoration:underline; background:transparent; color:#000;}
+
+#dropline li {float:left; margin-right:1px;}
+#dropline li.last {margin:0;}
+#dropline li a {display:block; float:left; height:35px; padding:0 0 0 20px; line-height:30px; text-decoration:none; font-family:"trebuchet MS", sans-serif; font-size:13px; text-decoration:none; color:#000; background:url(button-off.png);}
+#dropline li a b {display:block; float:left; height:35px; padding:0 20px 0 0; background:url(button-off.png) right top; cursor:pointer;}
+
+#dropline li a:hover {background:url(button-over.png); color:#fff; border:0;}
+#dropline li a:hover b {background:url(button-over.png) right top;}
+
+#dropline li:hover > a {background:url(button-over.png); color:#fff; border:0;}
+#dropline li:hover > a b {background:url(button-over.png) right top;}
+
+#dropline :hover div {left:0;}
+
+#dropline li.current a,
+#dropline li.current a:hover {background:url(button-select.png); color:#fff; font-weight:bold;}
+#dropline li.current a b,
+#dropline li.current a:hover b {background:url(button-select.png) right top; color:#fff;}
+
+#dropline li.current a:hover ul li a:hover {color:#000; background:transparent;}
+#dropline li.current:hover ul li a:hover {color:#000; background:transparent;}
+
+#dropline li.current div {width:100%; left:0; top:35px; background:#fff; z-index:5;}
+#dropline li.current ul {position:relative; float:left; left:50%;}
+#dropline li.current ul li {float:left; position:relative; right:50%;}
+#dropline li.current ul li a {display:block; float:left; padding:0 10px; background:transparent; color:#000; font-weight:bold;}
+#dropline li.current ul li.current_sub a {display:block; float:left; padding:0 10px; background:transparent; color:#c00; text-decoration:underline;}
+#dropline li.current ul li.current_sub a:hover {text-decoration:underline; background:transparent; color:#c00;}
+
+* html #dropline li.current div {width:expression(document.getElementById('dropline').offsetWidth);}
+* html #dropline li a:hover div {width:expression(document.getElementById('dropline').offsetWidth);}

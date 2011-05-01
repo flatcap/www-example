@@ -1,0 +1,53 @@
+/* ================================================================ 
+This copyright notice must be untouched at all times.
+
+The original version of this stylesheet and the associated (x)html
+is available at http://www.cssmenus.co.uk
+Copyright (c) 2009- Stu Nicholls. All rights reserved.
+This stylesheet and the associated (x)html may be modified in any 
+way to fit your requirements.
+=================================================================== */
+ul#menu {padding:0; list-style:none; background:url(back.gif); text-align:center; margin:0 auto; font-size:11px; font-family:arial, sans-serif; height:41px; width:1000px; position:absolute; left:0; top:139px;}
+ul#menu ul {padding:0; margin:0; list-style:none; position:absolute; left:-9999px;}
+ul#menu table {border-collapse:collapse; font-size:1em; float:left; margin:-1px;}
+
+ul#menu ul li {float:left; margin:0; text-align:left;}
+ul#menu ul li a {display:block; line-height:20px; margin:0; padding:0 10px; background:transparent; width:150px;}
+
+ul#menu li {display:inline; margin:0 -2px; text-align:left;}
+ul#menu li a {display:inline-block; height:36px; margin:5px 0 0 0;padding:0 20px 0 0; background:url(button.gif) right top; line-height:30px; text-decoration:none; color:#000;}
+ul#menu li a.sub {background:url(button-arrow.gif) right top;}
+
+html>/**/body ul#menu li {display:inline-block; padding:0;}
+
+* html ul#menu li a.sub {margin-right:3px;}
+* html ul#menu li a {margin-bottom:-4px;}
+
+ul#menu li a b {display:block; height:36px; float:left; padding:0 0 0 20px; background:url(button.gif) left top; cursor:pointer;}
+
+ul#menu li a:hover {position:relative; background-position:right bottom; color:#fff;}
+ul#menu li a:hover b {background-position:left bottom;}
+
+ul#menu li:hover {position:relative;}
+ul#menu li:hover > a {background-position:right bottom; color:#fff;}
+ul#menu li:hover > a b {background-position:left bottom;}
+
+ul#menu :hover ul {left:1px; width:105px; top:41px;}
+* html ul#menu :hover ul {top:36px;}
+
+ul#menu :hover ul li {display:block; float:left; margin:0; border-bottom:1px solid #fff;}
+ul#menu :hover ul li a {display:block; float:left; margin:0; height:25px; line-height:25px; width:95px; background:#ddd; color:#000;}
+ul#menu :hover ul li a.fly {background:#ddd url(arrow.gif) no-repeat right center;}
+ul#menu :hover ul li a:hover {background:#c60; color:#fff;}
+ul#menu :hover ul li:hover > a {background:#c60; color:#fff;}
+
+ul#menu :hover ul li a.fly:hover {background:#c60 url(arrow-over.gif) no-repeat right center;}
+ul#menu :hover ul li:hover > a.fly {background:#c60 url(arrow-over.gif) no-repeat right center;}
+
+ul#menu :hover ul ul {left:-9999px;}
+
+ul#menu :hover ul :hover ul {left:105px; top:0; width:150px;}
+
+ul#menu :hover ul :hover ul li {display:block; float:left; margin:0; border-bottom:1px solid #fff;}
+ul#menu :hover ul :hover ul li a {display:block; float:left; margin:0; height:25px; line-height:25px; background:#bbb; color:#000;}
+ul#menu :hover ul :hover ul li a:hover {color:#fff; background:#840;}

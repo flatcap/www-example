@@ -1,0 +1,39 @@
+#menu {float:right; padding:0; margin:5px 0 0 0; list-style:none; position:relative; height:125px; border-bottom:50px solid #ddd; width:380px; z-index:50;}
+#menu li {float:left; width:40px; height:120px;  margin-right:5px; background:#ddd; padding:5px 5px 0 5px;}
+#menu li#contact {margin:0;}
+#menu li a {display:block; width:40px; height:120px; position:absolute; z-index:50; top:5px;}
+#menu li a b {position:absolute; left:-9999px;}
+
+#menu li#home a {left:5px; background:url(home-off.gif) no-repeat left top;}
+#menu li#single a {left:60px; background:url(single-off.gif) no-repeat left top;}
+#menu li#dropdown a {left:115px; background:url(dropdown-off.gif) no-repeat left top;}
+#menu li#dropline a {left:170px; background:url(dropline-off.gif) no-repeat left top;}
+#menu li#flyout a {left:225px; background:url(flyout-off.gif) no-repeat left top;}
+#menu li#support a {left:280px; background:url(support-off.gif) no-repeat left top;}
+#menu li#contact a {left:335px; background:url(contact-off.gif) no-repeat left top;}
+
+.home #menu li#home a, 
+.single #menu li#single a,
+.dropdown #menu li#dropdown a,
+.dropline #menu li#dropline a,
+.flyout #menu li#flyout a,
+.support #menu li#support a,
+.contact #menu li#contact a {position:absolute; z-index:10; width:380px; height:180px; top:0;}
+
+.home #menu li#home a {left:0; background:url(home-on.gif) no-repeat 5px 5px;}
+.single #menu li#single a {left:0; background:url(single-on.gif) no-repeat 5px 5px;}
+.dropdown #menu li#dropdown a {left:0; background:url(dropdown-on.gif) no-repeat 5px 5px;}
+.dropline #menu li#dropline a {left:0; background:url(dropline-on.gif) no-repeat 5px 5px;}
+.flyout #menu li#flyout a {left:0; background:url(flyout-on.gif) no-repeat 5px 5px;}
+.support #menu li#support a {left:0; background:url(support-on.gif) no-repeat 5px 5px;}
+.contact #menu li#contact a {left:0; background:url(contact-on.gif) no-repeat 5px 5px;}
+
+#menu li a:hover {position:absolute; z-index:20; width:380px; height:180px; top:0;}
+
+#menu li#home a:hover {left:0; background:url(home-on.gif) no-repeat 5px 5px;}
+#menu li#single a:hover {left:0; background:url(single-on.gif) no-repeat 5px 5px;}
+#menu li#dropdown a:hover {left:0; background:url(dropdown-on.gif) no-repeat 5px 5px;}
+#menu li#dropline a:hover {left:0; background:url(dropline-on.gif) no-repeat 5px 5px;}
+#menu li#flyout a:hover {left:0; background:url(flyout-on.gif) no-repeat 5px 5px;}
+#menu li#support a:hover {left:0; background:url(support-on.gif) no-repeat 5px 5px;}
+#menu li#contact a:hover {left:0; background:url(contact-on.gif) no-repeat 5px 5px;}

@@ -1,0 +1,60 @@
+#menuContainer {padding:0; margin:50px 0 0 0; list-style:none; width:672px; height:96px; position:relative; float:right;}
+
+#menu {padding:0; margin:0; list-style:none; width:672px; height:96px; float:right;}
+
+#menu li {float:left; width:96px; height:96px; position:relative;}
+#menu li a {display:block; float:left; width:96px; height:96px; cursor:pointer;}
+#menu li a b {display:block; width:96px; height:0; padding-top:96px; overflow:hidden; position:absolute; background:url(highlight.png); left:-9999px;}
+* html #menu li a b {
+background:none;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='single_twentyfour/highlight.png', sizingMethod='scale');
+}
+
+
+#menu li#home a {background:url(home.png);}
+#menu li#single a {background:url(single.png);}
+#menu li#dropdown a {background:url(dropdown.png);}
+#menu li#dropline a {background:url(dropline.png);}
+#menu li#flyout a {background:url(flyout.png);}
+#menu li#support a {background:url(support.png);}
+#menu li#contact a {background:url(contact.png);}
+
+* html #menu li#home a {
+background:none;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='single_twentyfour/home.png', sizingMethod='scale');
+}
+* html #menu li#single a {
+background:none;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='single_twentyfour/single.png', sizingMethod='scale');
+}
+* html #menu li#dropdown a {
+background:none;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='single_twentyfour/dropdown.png', sizingMethod='scale');
+}
+* html #menu li#dropline a {
+background:none;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='single_twentyfour/dropline.png', sizingMethod='scale');
+}
+* html #menu li#flyout a {
+background:none;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='single_twentyfour/flyout.png', sizingMethod='scale');
+}
+* html #menu li#support a {
+background:none;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='single_twentyfour/support.png', sizingMethod='scale');
+}
+* html #menu li#contact a {
+background:none;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='single_twentyfour/contact.png', sizingMethod='scale');
+}
+
+#menu li a:hover {white-space:nowrap; position:relative;}
+#menu li a:hover b {left:0; top:0;}
+
+.home #menu li#home a b,
+.single #menu li#single a b,
+.dropdown #menu li#dropdown a b,
+.dropline #menu li#dropline a b,
+.flyout #menu li#flyout a b,
+.support #menu li#support a b,
+.contact #menu li#contact a b {left:0; top:0;}

@@ -1,0 +1,29 @@
+#pad {height:130px;}
+#dropline {padding:0; margin:0 auto 0 auto; list-style:none; height:40px; position:relative; width:532px; float:left;}
+#dropline table {border-collapse:collapse: width:0; height:0; margin:-1px -10px;}
+
+#dropline li {float:left;}
+#dropline li a b {display:block; height:45px; line-height:34px; width:76px; float:left; color:#000; text-decoration:none; font-family:arial, sans-serif; font-size:11px; background:url(off.png); text-align:center;}
+* html #dropline li a b {background:none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='dropline_four/off.png', sizingMethod='scale'); cursor:pointer;}
+
+#dropline li a:hover b {background:url(on.png); color:#fff; white-space:nowrap; cursor:pointer;}
+* html #dropline li a:hover b {background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='dropline_four/on.png', sizingMethod='scale'); cursor:pointer;}
+
+#dropline li:hover > a b {background:url(on.png); color:#fff;}
+
+#dropline ul {padding:0; margin:0; list-style:none; position:absolute; height:25px; width:532px; left:-9999px; top:-25px; z-index:10;}
+#dropline ul li {height:25px; line-height:25px;}
+#dropline ul li a {color:#aaa; padding:0 10px 0 10px; height:25px; line-height:25px; border-right:1px solid #aaa; font-weight:bold; font-size:11px; white-space:nowrap; font-family:arial, sans-serif; font-size:11px; text-decoration:none;}
+#dropline ul li a.last {border:none;}
+
+#dropline ul li a:hover {height:25px; line-height:25px; color:#fff;}
+
+
+#dropline :hover ul {left:0; background:url(trans.gif)}
+
+#dropline li.current a b {background:url(select.png); line-height:34px; color:#fff;}
+* html #dropline li.current a b {background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='dropline_four/select.png', sizingMethod='scale'); cursor:pointer;}
+
+#dropline li.current ul li a {color:#aaa; padding:0 10px 0 10px; height:25px; line-height:25px; border-right:1px solid #aaa; font-weight:bold; font-size:11px; white-space:nowrap; background:transparent;}
+#dropline li.current ul li a.last {border:none;}
+#dropline li.current ul li a:hover {height:25px; line-height:25px; color:#fff;}

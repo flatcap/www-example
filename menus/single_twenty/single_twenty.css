@@ -1,0 +1,20 @@
+#menu {float:left; padding:0; margin:5px 0 0 407px; list-style:none; width:250px;}
+* html #menu {margin-left:350px;}
+
+
+#menu li {float:left; margin-bottom:1px;}
+#menu li#contact {margin:0;}
+#menu li a {width:124px; float:left; text-align:right; padding:0 10px; text-decoration:none; height:24px; line-height:23px; color:#fff; unicode-bidi:bidi-override; direction: rtl; font-family:verdana, sans-serif; font-size:11px; background:#000;}
+#menu li a b {font-weight:normal;}
+
+.home #menu li#home a,
+.single #menu li#single a,
+.dropdown #menu li#dropdown a,
+.dropline #menu li#dropline a,
+.flyout #menu li#flyout a,
+.support #menu li#support a,
+.contact #menu li#contact a,
+#menu li a:hover,
+#menu li a:active,
+#menu li a:focus
+{padding-left:126px; direction:ltr; text-align:left;}

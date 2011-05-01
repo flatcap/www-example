@@ -1,0 +1,36 @@
+#menuContainer {float:left; left:250px; width:176px; height:176px; position:relative;}
+
+#menu {padding:0; margin:0; width:176px; height:176px; list-style:none; background:url(grid.png);}
+* html #menu {
+background:none;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='single_twentythree/grid.png', sizingMethod='scale');
+}
+
+#menu li a {display:block; width:42px; height:42px; background:url(trans.gif); position:absolute; left:0; top:0; color:#000; font-family:arial, sans-serif; font-size:11px; text-decoration:none;}
+#menu li a b {display:block; width:80px; height:80px; position:absolute; left:-9999px; text-align:center;}
+
+#menu li#home a {left:67px; top:0;}
+#menu li#single a {left:120px; top:28px;}
+#menu li#dropdown a {left:134px; top:86px;}
+#menu li#dropline a {left:96px; top:131px;}
+#menu li#flyout a {left:38px; top:131px;}
+#menu li#support a {left:0; top:85px;}
+#menu li#contact a {left:13px; top:28px;}
+
+#menu li a:hover {white-space:nowrap;}
+
+#menu li#home a:hover b {height:50px; left:-19px; top:50px; background:url(chome.png); padding-top:30px;}
+#menu li#single a:hover b {height:50px; left:-72px; top:22px; background:url(csingle.png); padding-top:30px;}
+#menu li#dropdown a:hover b {height:50px; left:-86px; top:-36px; background:url(cdropdown.png); padding-top:30px;}
+#menu li#dropline a:hover b {height:50px; left:-48px; top:-81px; background:url(cdropline.png); padding-top:30px;}
+#menu li#flyout a:hover b {height:50px; left:10px; top:-81px; background:url(cflyout.png); padding-top:30px;}
+#menu li#support a:hover b {height:50px; left:48px; top:-35px; background:url(csupport.png); padding-top:30px;}
+#menu li#contact a:hover b {height:50px; left:35px; top:22px; background:url(ccontact.png); padding-top:30px;}
+
+* html #menu li#home a:hover b {background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='single_twentythree/chome.png', sizingMethod='scale');}
+* html #menu li#single a:hover b {background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='single_twentythree/csingle.png', sizingMethod='scale');}
+* html #menu li#dropdown a:hover b {background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='single_twentythree/cdropdown.png', sizingMethod='scale');}
+* html #menu li#dropline a:hover b {background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='single_twentythree/cdropline.png', sizingMethod='scale');}
+* html #menu li#flyout a:hover b {background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='single_twentythree/cflyout.png', sizingMethod='scale');}
+* html #menu li#support a:hover b {background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='single_twentythree/csupport.png', sizingMethod='scale');}
+* html #menu li#contact a:hover b {background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='single_twentythree/ccontact.png', sizingMethod='scale');}

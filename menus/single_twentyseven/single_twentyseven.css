@@ -1,0 +1,42 @@
+#menuContainer {width:532px; height:180px; background:url(tshirt.png) no-repeat; float:right;}
+* html #menuContainer {background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='single_twentyseven/tshirt.png', sizingMethod='scale');}
+
+#menu {float:left;padding:0; margin:0; list-style:none; position:relative; height:180px; width:532px; z-index:50;}
+#menu li {float:left; width:64px; height:64px; position:absolute;}
+#menu li a {display:block; width:64px; height:64px; color:#000; text-decoration:none; font-family:arial, sans-serif; font-size:12px; white-space:nowrap;}
+#menu li a b {position:absolute; left:-9999px;}
+
+#menu li#home {left:96px; top:32px;}
+#menu li#single {left:128px; top:96px;}
+#menu li#dropdown {left:160px; top:0;}
+#menu li#dropline {left:192px; top:64px;}
+#menu li#flyout {left:256px; top:32px;}
+#menu li#support {left:352px; top:64px;}
+#menu li#contact {left:288px; top:96px;}
+
+
+#menu li a:hover {cursor:pointer;}
+
+.home #menu li#home a b {left:118px; top:131px; color:#000; text-decoration:none;}
+.single #menu li#single a b {left:86px; top:67px; color:#000; text-decoration:none;}
+.dropdown #menu li#dropdown a b {left:54px; top:163px; color:#000; text-decoration:none;}
+.dropline #menu li#dropline a b {left:22px; top:98px; color:#000; text-decoration:none;}
+.flyout #menu li#flyout a b {left:-42px; top:131px; color:#000; text-decoration:none;}
+.support #menu li#support a b {left:-138px; top:99px; color:#000; text-decoration:none;}
+.contact #menu li#contact a b {left:-76px; top:67px; color:#000; text-decoration:none;}
+
+#menu li#home a:hover {background:url(homeb.png);}
+#menu li#single a:hover {background:url(singleb.png);}
+#menu li#dropdown a:hover {background:url(dropb.png);}
+#menu li#dropline a:hover {background:url(lineb.png);}
+#menu li#flyout a:hover {background:url(flyoutb.png);}
+#menu li#support a:hover {background:url(supportb.png);}
+#menu li#contact a:hover {background:url(contactb.png);}
+
+* html #menu li#home a:hover {background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='single_twentyseven/homeb.png', sizingMethod='scale');}
+* html #menu li#single a:hover {background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='single_twentyseven/singleb.png', sizingMethod='scale');}
+* html #menu li#dropdown a:hover {background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='single_twentyseven/dropb.png', sizingMethod='scale');}
+* html #menu li#dropline a:hover {background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='single_twentyseven/lineb.png', sizingMethod='scale');}
+* html #menu li#flyout a:hover {background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='single_twentyseven/flyoutb.png', sizingMethod='scale');}
+* html #menu li#support a:hover {background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='single_twentyseven/supportb.png', sizingMethod='scale');}
+* html #menu li#contact a:hover {background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='single_twentyseven/contactb.png', sizingMethod='scale');}

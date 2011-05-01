@@ -1,0 +1,46 @@
+/* ================================================================ 
+This copyright notice must be untouched at all times.
+
+The original version of this stylesheet and the associated (x)html
+is available at http://www.cssmenus.co.uk
+Copyright (c) 2009- Stu Nicholls. All rights reserved.
+This stylesheet and the associated (x)html may be modified in any 
+way to fit your requirements.
+=================================================================== */
+#pad {height:80px;}
+#menu {padding:0 0 0 50px; margin:0; list-style:none; width:650px; float:right; border-top:5px solid #844; margin-top:-40px;}
+#menu li {float:left; margin-right:15px;}
+#menu li a {display:block; width:0; height:0; border-left:35px solid #fff; border-right:35px solid #fff; border-bottom:35px dashed transparent; position:relative; font-family:arial, sans-serif; font-size:11px; color:#000; text-decoration:none; top:48px;}
+#menu li b {position:absolute; left:-35px; top:-50px; height:50px; width:70px; line-height:50px; text-align:center; cursor:pointer; background:#fff;}
+
+.home #menu li#home a {color:#fff; border-left:35px solid red; border-right:35px solid red;}
+.home #menu li#home b {background:red;}
+.single #menu li#single a {color:#fff; border-left:35px solid orange; border-right:35px solid orange;}
+.single #menu li#single b {background:orange;}
+.dropdown #menu li#dropdown a {color:#fff; border-left:35px solid #cc0; border-right:35px solid #cc0;}
+.dropdown #menu li#dropdown b {background:#cc0;}
+.dropline #menu li#dropline a {color:#fff; border-left:35px solid green; border-right:35px solid green;}
+.dropline #menu li#dropline b {background:green;}
+.flyout #menu li#flyout a {color:#fff; border-left:35px solid blue; border-right:35px solid blue;}
+.flyout #menu li#flyout b {background:blue;}
+.support #menu li#support a {color:#fff; border-left:35px solid indigo; border-right:35px solid indigo;}
+.support #menu li#support b {background:indigo;}
+.contact #menu li#contact a {color:#fff; border-left:35px solid violet; border-right:35px solid violet;}
+.contact #menu li#contact b {background:violet;}
+
+
+#menu li#home a:hover, #menu li#home a:active, #menu li#home a:focus {color:#fff; border-left:35px solid red; border-right:35px solid red;}
+#menu li#home a:hover b, #menu li#home a:active b, #menu li#home a:focus b {background:red;}
+#menu li#single a:hover, #menu li#single a:active, #menu li#single a:focus {color:#fff; border-left:35px solid orange; border-right:35px solid orange;}
+#menu li#single a:hover b, #menu li#single a:active b, #menu li#single a:focus b {background:orange;}
+#menu li#dropdown a:hover, #menu li#dropdown a:active, #menu li#dropdown a:focus {color:#fff; border-left:35px solid #cc0; border-right:35px solid #cc0;}
+#menu li#dropdown a:hover b, #menu li#dropdown a:active b, #menu li#dropdown a:focus b {background:#cc0;}
+#menu li#dropline a:hover, #menu li#dropline a:active, #menu li#dropline a:focus {color:#fff; border-left:35px solid green; border-right:35px solid green;}
+#menu li#dropline a:hover b, #menu li#dropline a:active b, #menu li#dropline a:focus b {background:green;}
+#menu li#flyout a:hover, #menu li#flyout a:active, #menu li#flyout a:focus {color:#fff; border-left:35px solid blue; border-right:35px solid blue;}
+#menu li#flyout a:hover b, #menu li#flyout a:active b, #menu li#flyout a:focus b {background:blue;}
+#menu li#support a:hover, #menu li#support a:active, #menu li#support a:focus {color:#fff; border-left:35px solid indigo; border-right:35px solid indigo;}
+#menu li#support a:hover b, #menu li#support a:active b, #menu li#support a:focus b {background:indigo;}
+#menu li#contact a:hover, #menu li#contact a:active, #menu li#contact a:focus {color:#fff; border-left:35px solid violet; border-right:35px solid violet;}
+#menu li#contact a:hover b, #menu li#contact a:active b, #menu li#contact a:focus b {background:violet;}
+

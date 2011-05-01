@@ -1,0 +1,23 @@
+#pad {height:140px;}
+/* ================================================================ 
+This copyright notice must be untouched at all times.
+
+The original version of this stylesheet and the associated (x)html
+is available at http://www.cssmenus.co.uk
+Copyright (c) 2009- Stu Nicholls. All rights reserved.
+This stylesheet and the associated (x)html may be modified in any 
+way to fit your requirements.
+=================================================================== */
+#menu {padding:0; margin:0; list-style:none;}
+#menu li {float:left; margin-left:1px;}
+#menu li a {display:block; height:40px; line-height:40px; padding:0 20px; float:left; background:#ddd; color:#000; text-decoration:none;}
+#menu li a b {text-transform:uppercase;}
+#menu li a:hover, 
+.home #menu li#home a,
+.single #menu li#single a,
+.dropdown #menu li#dropdown a,
+.dropline #menu li#dropline a,
+.flyout #menu li#flyout a,
+.support #menu li#support a,
+.contact #menu li#contact a
+{background: #fff url(arrow.gif) no-repeat center bottom; color:#e60;}

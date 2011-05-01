@@ -1,0 +1,38 @@
+#pad {height:100px;}
+/* ================================================================ 
+This copyright notice must be untouched at all times.
+
+The original version of this stylesheet and the associated (x)html
+is available at http://www.cssmenus.co.uk
+Copyright (c) 2009- Stu Nicholls. All rights reserved.
+This stylesheet and the associated (x)html may be modified in any 
+way to fit your requirements.
+=================================================================== */
+
+#menu {padding:0; margin:0; list-style:none;}
+#menu li {float:left; margin-left:1px; padding-top:2px;}
+#menu li a {display:block; height:36px; line-height:36px; padding:0 25px 0 0; float:left; background: url(taba.gif) no-repeat right top; color:#ddd; text-decoration:none;}
+#menu li a b {display:block; height:36px; float:left; padding:0 0 0 25px; background: url(tabb.gif) left top; cursor:pointer;}
+
+#menu li a:hover, 
+#menu li a:active,
+#menu li a:focus,
+.home #menu li#home a,
+.single #menu li#single a,
+.dropdown #menu li#dropdown a,
+.dropline #menu li#dropline a,
+.flyout #menu li#flyout a,
+.support #menu li#support a,
+.contact #menu li#contact a
+{background-position:right -36px; line-height:34px; color:#fff;}
+#menu li a:hover b,
+#menu li a:active b,
+#menu li a:focus b,
+.home #menu li#home a b,
+.single #menu li#single a b,
+.dropdown #menu li#dropdown a b,
+.dropline #menu li#dropline a b,
+.flyout #menu li#flyout a b,
+.support #menu li#support a b,
+.contact #menu li#contact a b
+{background-position:left -36px;}

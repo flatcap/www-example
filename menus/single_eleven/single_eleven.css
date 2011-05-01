@@ -1,0 +1,65 @@
+#pad {height:20px;}
+/* ================================================================ 
+This copyright notice must be untouched at all times.
+
+The original version of this stylesheet and the associated (x)html
+is available at http://www.cssmenus.co.uk
+Copyright (c) 2009- Stu Nicholls. All rights reserved.
+This stylesheet and the associated (x)html may be modified in any 
+way to fit your requirements.
+=================================================================== */
+#menu {padding:0; margin:0; list-style:none; width:700px; height:146px; float:left;}
+
+#menu li {position:relative; float:left; margin:0 5px 0 0;}
+#menu li.last {margin:0;}
+#menu li a {display:block; height:146px; width:95px; line-height:20px; padding:0; float:left; color:#fff; text-decoration:none; font-family:"trebuchet MS", sans-serif; font-size:18px; text-align:center; cursor:pointer;}
+#menu li a b {position:relative; top:28px; font-weight:normal;}
+
+#menu li#home a {background:url(red-off.png);}
+#menu li#single a {background:url(orange-off.png);}
+#menu li#dropdown a {background:url(yellow-off.png);}
+#menu li#dropline a {background:url(green-off.png);}
+#menu li#flyout a {background:url(blue-off.png);}
+#menu li#support a {background:url(indigo-off.png);}
+#menu li#contact a {background:url(violet-off.png);}
+
+#menu li#home a:hover {background:url(red-on.png);}
+#menu li#single a:hover {background:url(orange-on.png);}
+#menu li#dropdown a:hover {background:url(yellow-on.png);}
+#menu li#dropline a:hover {background:url(green-on.png);}
+#menu li#flyout a:hover {background:url(blue-on.png);}
+#menu li#support a:hover {background:url(indigo-on.png);}
+#menu li#contact a:hover {background:url(violet-on.png);}
+
+.home #menu li#home a {background:url(red-on.png);}
+.single #menu li#single a {background:url(orange-on.png);}
+.dropdown #menu li#dropdown a {background:url(yellow-on.png);}
+.dropline #menu li#dropline a {background:url(green-on.png);}
+.flyout #menu li#flyout a {background:url(blue-on.png);}
+.support #menu li#support a {background:url(indigo-on.png);}
+.contact #menu li#contact a {background:url(violet-on.png);}
+
+/* this is for IE6 png transparency fix - note the image path is from the .html file not the .css file */
+* html #menu li#home a {background:none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='single_eleven/red-off.png', sizingMethod='scale');}
+* html #menu li#single a {background:none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='single_eleven/orange-off.png', sizingMethod='scale');}
+* html #menu li#dropdown a {background:none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='single_eleven/yellow-off.png', sizingMethod='scale');}
+* html #menu li#dropline a {background:none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='single_eleven/green-off.png', sizingMethod='scale');}
+* html #menu li#flyout a {background:none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='single_eleven/blue-off.png', sizingMethod='scale');}
+* html #menu li#support a {background:none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='single_eleven/indigo-off.png', sizingMethod='scale');}
+* html #menu li#contact a {background:none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='single_eleven/violet-off.png', sizingMethod='scale');}
+
+* html #menu li#home a:hover {background:none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='single_eleven/red-on.png', sizingMethod='scale');}
+* html #menu li#single a:hover {background:none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='single_eleven/orange-on.png', sizingMethod='scale');}
+* html #menu li#dropdown a:hover {background:none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='single_eleven/yellow-on.png', sizingMethod='scale');}
+* html #menu li#dropline a:hover {background:none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='single_eleven/green-on.png', sizingMethod='scale');}
+* html #menu li#flyout a:hover {background:none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='single_eleven/blue-on.png', sizingMethod='scale');}
+* html #menu li#support a:hover {background:none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='single_eleven/indigo-on.png', sizingMethod='scale');}
+* html #menu li#contact a:hover {background:none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='single_eleven/violet-on.png', sizingMethod='scale');}
+
+* html .home #menu li#home a {background:none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='single_eleven/red-on.png', sizingMethod='scale');}
+* html .single #menu li#single a {background:none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='single_eleven/orange-on.png', sizingMethod='scale');}
+* html .dropdown #menu li#dropdown a {background:none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='single_eleven/yellow-on.png', sizingMethod='scale');}
+* html .dropline #menu li#dropline a {background:none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='single_eleven/green-on.png', sizingMethod='scale');}
+* html .flyout #menu li#flyout a {background:none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='single_eleven/blue-on.png', sizingMethod='scale');}
+* html .support #menu li#support a {background:none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='single_eleven/indigo-on.png', sizingMethod='scale');}
+* html .contact #menu li#contact a {background:none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='single_eleven/violet-on.png', sizingMethod='scale');}

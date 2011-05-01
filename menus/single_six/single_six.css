@@ -1,0 +1,46 @@
+#pad {height:150px;}
+/* ================================================================ 
+This copyright notice must be untouched at all times.
+
+The original version of this stylesheet and the associated (x)html
+is available at http://www.cssmenus.co.uk
+Copyright (c) 2009- Stu Nicholls. All rights reserved.
+This stylesheet and the associated (x)html may be modified in any 
+way to fit your requirements.
+=================================================================== */
+#menu {padding:0 0 0 30px; margin:0; list-style:none;}
+#menu li {float:left; position:relative; margin-right:2px; display:block; height:0; width:60px; border-bottom:30px solid #069; border-left:30px dashed transparent;}
+#menu li a {position:absolute; left:60px; top:0; border-top:30px solid #069; border-right:30px dotted transparent; text-decoration:none; font-family:arial, sans-serif; font-size:12px; color:#fff;}
+#menu li a b {display:block; background:#069; position:absolute; top:-30px; left:-60px; width:60px; height:30px; line-height:30px; text-align:center; cursor:pointer; font-weight:normal;}
+
+#menu li#single {width:80px;}
+#menu li#single a {left:80px;}
+#menu li#single a b {left:-80px; width:80px;}
+
+
+#menu li a:hover {color:#000;}
+
+.home #menu li#home,
+.single #menu li#single,
+.dropdown #menu li#dropdown,
+.dropline #menu li#dropline,
+.flyout #menu li#flyout,
+.support #menu li#support,
+.contact #menu li#contact
+{border-bottom-color:#e70;}
+.home #menu li#home a,
+.single #menu li#single a,
+.dropdown #menu li#dropdown a,
+.dropline #menu li#dropline a,
+.flyout #menu li#flyout a,
+.support #menu li#support a,
+.contact #menu li#contact a
+{color:#000; border-top-color:#e70;}
+.home #menu li#home a b,
+.single #menu li#single a b,
+.dropdown #menu li#dropdown a b,
+.dropline #menu li#dropline a b,
+.flyout #menu li#flyout a b,
+.support #menu li#support a b,
+.contact #menu li#contact a b
+{background:#e70;}

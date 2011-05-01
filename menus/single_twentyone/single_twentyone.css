@@ -1,0 +1,30 @@
+#menu {padding:0; margin:0; list-style:none; width:546px; height:180px; background:url(bw.jpg); position:relative; float:right;}
+#menu li {float:left;}
+#menu li a {display:block; width:78px; height:100px; background:transparent;}
+#menu li a b {position:absolute; left:-9999px;}
+
+#menu li#home,
+#menu li#dropdown,
+#menu li#flyout,
+#menu li#contact
+{margin-top:23px;}
+#menu li#single,
+#menu li#dropline,
+#menu li#support
+{margin-top:3px;}
+
+#menu li#home a:hover {background:url(color.jpg) 0 -23px;}
+#menu li#single a:hover {background:url(color.jpg) -78px -3px;}
+#menu li#dropdown a:hover {background:url(color.jpg) -156px -23px;}
+#menu li#dropline a:hover {background:url(color.jpg) -234px -3px;}
+#menu li#flyout a:hover {background:url(color.jpg) -312px -23px;}
+#menu li#support a:hover {background:url(color.jpg) -390px -3px;}
+#menu li#contact a:hover {background:url(color.jpg) -468px -23px;}
+
+.home #menu li#home a, .home #menu li#home a:hover, #menu li#home a:active, #menu li#home a:focus {background:url(white.jpg) 0 -23px;}
+.single #menu li#single a, .single #menu li#single a:hover, #menu li#single a:active, #menu li#single a:focus {background:url(white.jpg) -78px -3px;}
+.dropdown #menu li#dropdown a, .dropdown #menu li#dropdown a:hover, #menu li#dropdown a:active, #menu li#dropdown a:focus {background:url(white.jpg) -156px -23px;}
+.dropline #menu li#dropline a, .dropline #menu li#dropline a:hover, #menu li#dropline a:active, #menu li#dropline a:focus {background:url(white.jpg) -234px -3px;}
+.flyout #menu li#flyout a, .flyout #menu li#flyout a:hover, #menu li#flyout a:active, #menu li#flyout a:focus {background:url(white.jpg) -312px -23px;}
+.support #menu li#support a, .support #menu li#support a:hover, #menu li#support a:active, #menu li#support a:focus {background:url(white.jpg) -390px -3px;}
+.contact #menu li#contact a, .contact #menu li#contact a:hover, #menu li#contact a:active, #menu li#contact a:focus {background:url(white.jpg) -468px -23px;}

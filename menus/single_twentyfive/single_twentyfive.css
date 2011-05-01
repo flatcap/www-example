@@ -1,0 +1,37 @@
+#menuContainer {padding:0; margin:0; list-style:none; width:798px; height:180px; position:absolute; right:0; top:0;}
+
+#menu {padding:0; margin:0; list-style:none; width:798px; height:180px; background:url(hand.png);}
+* html #menu {
+background:none;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='single_twentyfive/hand.png', sizingMethod='scale');
+}
+
+#menu li {float:left; margin-top:130px; width:114px; height:50px; position:relative;}
+#menu li a {display:block; width:113px; height:50px; background:url(off.png); border-right:1px solid #888; text-decoration:none; color:#ccc; font-family:verdana, sans-serif; font-size:11px;}
+#menu li.last a {border:0;}
+
+* html #menu li a {
+background:none;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='single_twentyfive/off.png', sizingMethod='scale');
+}
+
+#menu li a b {display:block; width:113px; height:50px; line-height:48px; text-transform:lowercase; text-align:center;}
+
+
+.home #menu li#home a,
+.single #menu li#single a,
+.dropdown #menu li#dropdown a,
+.dropline #menu li#dropline a,
+.flyout #menu li#flyout a,
+.support #menu li#support a,
+.contact #menu li#contact a,
+#menu li a:hover {white-space:nowrap; color:#fff; cursor:pointer;}
+
+.home #menu li#home a b,
+.single #menu li#single a b,
+.dropdown #menu li#dropdown a b,
+.dropline #menu li#dropline a b,
+.flyout #menu li#flyout a b,
+.support #menu li#support a b,
+.contact #menu li#contact a b,
+#menu li a:hover b {background:url(on.gif);}

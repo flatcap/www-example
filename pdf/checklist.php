@@ -3,8 +3,6 @@
 set_include_path ('/usr/share/php/fpdf');
 require ('fpdf.php');
 
-set_include_path ('../../libs');
-
 include 'db.php';
 include 'utils.php';
 
@@ -20,7 +18,7 @@ function Header()
 {
 	$logo  = 'logo.png';
 	$title = 'Checklist';
-	$date  = strftime ("%d %B %Y");
+	$date  = trim (strftime ("%e %B %Y"));
 
 	$this->Image ($logo, 5, 5, 17);
 	$this->SetFont ('Arial', 'B', 20);
@@ -157,11 +155,11 @@ function add_stats ($panels, $routes, $auto, $top, $lead, $height, $last)
 	$this->SetTextColor (0, 0, 255);
 	$this->SetFont ('Times', 'U', 9);
 	$this->Cell (3);
-	$this->Write ($h, 'http://craggy.russon.org', 'http://craggy.russon.org');
+	$this->Write ($h, 'http://russon.org/craggy', 'http://russon.org/craggy');
 	$this->SetTextColor (0);
 	$this->SetFont ('Times', '', 9);
 
-	$this->Image ('rss.png', 287, 200, 5, 0, '', 'http://craggy.russon.org');
+	$this->Image ('rss.png', 287, 200, 5, 0, '', 'http://russon.org/craggy');
 
 	$this->SetXY (101, 200);
 	$this->SetFont ('Times', 'B', 10);
@@ -275,7 +273,8 @@ function checklist_main ()
 		$title = $titles[$gb];
 		$count = count ($list);
 
-		if (($gb == 6) || ($gb == 8))
+		//if (($gb == 6) || ($gb == 8))
+		if ($gb == 6)
 			$pdf->new_column();
 
 		$pdf->print_grade ($title, $count);

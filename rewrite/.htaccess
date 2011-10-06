@@ -1,4 +1,3 @@
 
-
 RewriteEngine On
-RewriteRule ^user/([^/\.]+)/?$ /craggy_test/examples/rewrite/work.php?user=$1 [L]
+RewriteRule ^user/([^/\.]+)/?$ /example/rewrite/work.php?user=$1 [L]

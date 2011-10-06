@@ -1,5 +1,7 @@
 <?php
 
+set_include_path ('../libs');
+
 include_once 'xml.php';
 
 function lookup_main()

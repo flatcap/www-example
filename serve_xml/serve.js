@@ -28,19 +28,19 @@ function route_callback()
 
 	txt =	"<table cellspacing=0 border=1><tr>" +
 		"<th>ID</th>" +
-		"<th>Route ID</th>" +
-		"<th>Date Climbed</th>" +
-		"<th>Success</th>" +
+		"<th>Panel</th>" +
+		"<th>Colour</th>" +
+		"<th>Grade</th>" +
 		"</tr>";
 
-	x = xmlhttp.responseXML.documentElement.getElementsByTagName("climb");
+	x = xmlhttp.responseXML.documentElement.getElementsByTagName("route");
 	for (i = 0; i < x.length; i++) {
 
 		txt += "<tr>";
 		txt += route_get_node (x[i], "id");
-		txt += route_get_node (x[i], "route_id");
-		txt += route_get_node (x[i], "date_climbed");
-		txt += route_get_node (x[i], "success_id");
+		txt += route_get_node (x[i], "panel");
+		txt += route_get_node (x[i], "colour");
+		txt += route_get_node (x[i], "grade");
 		txt += "</tr>";
 	}
 	txt += "</table>";
@@ -62,7 +62,7 @@ function route_onkeyup()
 		xmlhttp = new ActiveXObject ("Microsoft.XMLHTTP");	// IE6, IE5
 	}
 	xmlhttp.onreadystatechange = route_callback;
-	xmlhttp.open ("GET", "serve.php?q=climb", true);
+	xmlhttp.open ("GET", "serve.php?q=" + str, true);
 	xmlhttp.send();
 }
 

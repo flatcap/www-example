@@ -1,19 +1,17 @@
 <?php
 
-set_include_path ('../../libs');
-
 include 'db.php';
 include 'db_names.php';
 #include 'utils.php';
 
-#if (!isset ($_GET))
-#	return;
-#
-#if (!array_key_exists ('q', $_GET))
-#	return;
-#
-#$q=trim($_GET['q']);
-#if ($q != 'climb')
+if (!isset ($_GET))
+	return;
+
+if (!array_key_exists ('q', $_GET))
+	return;
+
+$q=trim($_GET['q']);
+#if ($q != 'route')
 #	return;
 
 #$g_routes  = db_select('route');
@@ -22,25 +20,25 @@ include 'db_names.php';
 
 header('Content-Type: application/xml; charset=ISO-8859-1');
 
-$table   = $DB_CLIMB;
-$columns = array ('id', 'route_id', 'date_climbed', 'success_id');
-$where   = array ('climber_id = 1', 'active = 1');
-$order   = null;
+$table   = $DB_V_ROUTE;
+$columns = array ('id', 'panel', 'colour', 'grade');
+$where   = "panel like '%{$q}%'";
+$order   = "panel_seq, grade_seq, colour";
 
-$climb_list = db_select($table, $columns, $where, $order);
+$route_list = db_select($table, $columns, $where, $order);
 
 $output = "<?xml version='1.0' encoding='UTF-8' standalone='yes'?>\n";
-$output .= "<climbs>\n";
+$output .= "<routes>\n";
 
-foreach ($climb_list as $climb) {
-	$output .= "\t<climb>\n";
+foreach ($route_list as $route) {
+	$output .= "\t<route>\n";
 	foreach ($columns as $name) {
-		$value = $climb[$name];
+		$value = $route[$name];
 		$output .= "\t\t<$name>$value</$name>\n";
 	}
-	$output .= "\t</climb>\n";
+	$output .= "\t</route>\n";
 }
 
-$output .= "</climbs>\n";
+$output .= "</routes>\n";
 
 echo $output;
